@@ -1,0 +1,11 @@
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\bin\Debug\PCampeonato.exe.config
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\bin\Debug\PCampeonato.exe
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\bin\Debug\PCampeonato.pdb
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csprojResolveAssemblyReference.cache
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroTime.resources
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmMenuPrincipal.resources
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.Properties.Resources.resources
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csproj.GenerateResource.Cache
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.exe
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.pdb
+C:\Users\0030481823009\Desktop\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroEstadio.resources
