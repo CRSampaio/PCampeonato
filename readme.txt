@@ -1,0 +1,1 @@
+Sai daqui curioso desgraçado!
