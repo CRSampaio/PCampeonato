@@ -47,7 +47,7 @@ namespace PCampeonato
             int retorno = 0;
             try
             {
-                mycommand = new SqlCommand("INSERT INTO TIME VALUES (@nome_cidade)",
+                mycommand = new SqlCommand("INSERT INTO TIME VALUES (@nome_time)",
                     frmMenuPrincipal.conexao);
 
                 mycommand.Parameters.Add(new SqlParameter("@nome_time",
