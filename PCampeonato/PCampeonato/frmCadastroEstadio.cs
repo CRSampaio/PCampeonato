@@ -12,6 +12,11 @@ namespace PCampeonato
 {
     public partial class frmCadastroEstadio : Form
     {
+
+        private BindingSource bnEstadio = new BindingSource();
+        private bool bInclusao = false;
+        private DataSet dsEstadio = new DataSet();
+
         public frmCadastroEstadio()
         {
             InitializeComponent();
@@ -19,7 +24,37 @@ namespace PCampeonato
 
         private void btnNovoRegistro_Click(object sender, EventArgs e)
         {
-            
+            /*if (TabControl1.SelectedIndex == 0)
+            {
+                TabControl1.SelectedTab(1);
+            }
+
+            bnEstadio
+            */
+
+
+        }
+
+        private void frmCadastroEstadio_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Estadio Est = new Estadio();
+                dsEstadio.Tables.Add(Est.Listar());
+                bnEstadio.DataSource = dsEstadio.Tables["TBEstadio"];
+                dgvEstadio.DataSource = bnEstadio;
+                bnvEstadio.BindingSource = bnEstadio;
+
+                txtId.DataBindings.Add("TEXT", bnEstadio, "id_estadio");
+                txtNomeEstadio.DataBindings.Add("TEXT", bnEstadio, "nome_Estadio");
+                cbxEstado.DataBindings.Add("SelectedItem", bnEstadio, "uf_Estadio");
+
+            }
+        }
+
+        private void bnvEstadio_RefreshItems(object sender, EventArgs e)
+        {
+
         }
     }
 }

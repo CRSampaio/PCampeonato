@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroEstadio));
             this.cbxEstado = new System.Windows.Forms.ComboBox();
-            this.dgvCidade = new System.Windows.Forms.DataGridView();
+            this.dgvEstadio = new System.Windows.Forms.DataGridView();
             this.Dados = new System.Windows.Forms.TabPage();
-            this.txtNomeCidade = new System.Windows.Forms.TextBox();
+            this.txtNomeEstadio = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
+            this.lblEstadio = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.bnvCidade = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnvEstadio = new System.Windows.Forms.BindingNavigator(this.components);
             this.BindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.BindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.BindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -56,10 +56,10 @@
             this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.Detalhes = new System.Windows.Forms.TabPage();
             this.TabControl1 = new System.Windows.Forms.TabControl();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstadio)).BeginInit();
             this.Dados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).BeginInit();
-            this.bnvCidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvEstadio)).BeginInit();
+            this.bnvEstadio.SuspendLayout();
             this.Detalhes.SuspendLayout();
             this.TabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -103,25 +103,25 @@
             this.cbxEstado.Size = new System.Drawing.Size(82, 21);
             this.cbxEstado.TabIndex = 3;
             // 
-            // dgvCidade
+            // dgvEstadio
             // 
-            this.dgvCidade.AllowUserToAddRows = false;
-            this.dgvCidade.AllowUserToDeleteRows = false;
-            this.dgvCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvEstadio.AllowUserToAddRows = false;
+            this.dgvEstadio.AllowUserToDeleteRows = false;
+            this.dgvEstadio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCidade.Location = new System.Drawing.Point(0, 3);
-            this.dgvCidade.MaximumSize = new System.Drawing.Size(346, 182);
-            this.dgvCidade.MinimumSize = new System.Drawing.Size(346, 182);
-            this.dgvCidade.Name = "dgvCidade";
-            this.dgvCidade.ReadOnly = true;
-            this.dgvCidade.Size = new System.Drawing.Size(346, 182);
-            this.dgvCidade.TabIndex = 0;
+            this.dgvEstadio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstadio.Location = new System.Drawing.Point(0, 3);
+            this.dgvEstadio.MaximumSize = new System.Drawing.Size(346, 182);
+            this.dgvEstadio.MinimumSize = new System.Drawing.Size(346, 182);
+            this.dgvEstadio.Name = "dgvEstadio";
+            this.dgvEstadio.ReadOnly = true;
+            this.dgvEstadio.Size = new System.Drawing.Size(346, 182);
+            this.dgvEstadio.TabIndex = 0;
             // 
             // Dados
             // 
-            this.Dados.Controls.Add(this.dgvCidade);
+            this.Dados.Controls.Add(this.dgvEstadio);
             this.Dados.Location = new System.Drawing.Point(4, 22);
             this.Dados.Name = "Dados";
             this.Dados.Padding = new System.Windows.Forms.Padding(3);
@@ -130,13 +130,13 @@
             this.Dados.Text = "Dados";
             this.Dados.UseVisualStyleBackColor = true;
             // 
-            // txtNomeCidade
+            // txtNomeEstadio
             // 
-            this.txtNomeCidade.Enabled = false;
-            this.txtNomeCidade.Location = new System.Drawing.Point(131, 75);
-            this.txtNomeCidade.Name = "txtNomeCidade";
-            this.txtNomeCidade.Size = new System.Drawing.Size(121, 20);
-            this.txtNomeCidade.TabIndex = 2;
+            this.txtNomeEstadio.Enabled = false;
+            this.txtNomeEstadio.Location = new System.Drawing.Point(131, 75);
+            this.txtNomeEstadio.Name = "txtNomeEstadio";
+            this.txtNomeEstadio.Size = new System.Drawing.Size(121, 20);
+            this.txtNomeEstadio.TabIndex = 2;
             // 
             // txtId
             // 
@@ -155,14 +155,14 @@
             this.lblEstado.TabIndex = 2;
             this.lblEstado.Text = "Estado";
             // 
-            // lblCidade
+            // lblEstadio
             // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(25, 77);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(86, 13);
-            this.lblCidade.TabIndex = 1;
-            this.lblCidade.Text = "Nome da Cidade";
+            this.lblEstadio.AutoSize = true;
+            this.lblEstadio.Location = new System.Drawing.Point(25, 77);
+            this.lblEstadio.Name = "lblEstadio";
+            this.lblEstadio.Size = new System.Drawing.Size(88, 13);
+            this.lblEstadio.TabIndex = 1;
+            this.lblEstadio.Text = "Nome da Estádio";
             // 
             // lblId
             // 
@@ -183,14 +183,14 @@
             this.btnCancelar.Size = new System.Drawing.Size(28, 28);
             this.btnCancelar.Text = "Cancelar Alteração";
             // 
-            // bnvCidade
+            // bnvEstadio
             // 
-            this.bnvCidade.AddNewItem = null;
-            this.bnvCidade.CountItem = this.BindingNavigatorCountItem;
-            this.bnvCidade.CountItemFormat = "de {0}";
-            this.bnvCidade.DeleteItem = null;
-            this.bnvCidade.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bnvCidade.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnvEstadio.AddNewItem = null;
+            this.bnvEstadio.CountItem = this.BindingNavigatorCountItem;
+            this.bnvEstadio.CountItemFormat = "de {0}";
+            this.bnvEstadio.DeleteItem = null;
+            this.bnvEstadio.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bnvEstadio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BindingNavigatorMoveFirstItem,
             this.BindingNavigatorMovePreviousItem,
             this.BindingNavigatorSeparator,
@@ -206,16 +206,17 @@
             this.btnAlterar,
             this.btnCancelar,
             this.btnSair});
-            this.bnvCidade.Location = new System.Drawing.Point(0, 0);
-            this.bnvCidade.MoveFirstItem = this.BindingNavigatorMoveFirstItem;
-            this.bnvCidade.MoveLastItem = this.BindingNavigatorMoveLastItem;
-            this.bnvCidade.MoveNextItem = this.BindingNavigatorMoveNextItem;
-            this.bnvCidade.MovePreviousItem = this.BindingNavigatorMovePreviousItem;
-            this.bnvCidade.Name = "bnvCidade";
-            this.bnvCidade.PositionItem = this.BindingNavigatorPositionItem;
-            this.bnvCidade.Size = new System.Drawing.Size(367, 31);
-            this.bnvCidade.TabIndex = 5;
-            this.bnvCidade.Text = "bnvCidade";
+            this.bnvEstadio.Location = new System.Drawing.Point(0, 0);
+            this.bnvEstadio.MoveFirstItem = this.BindingNavigatorMoveFirstItem;
+            this.bnvEstadio.MoveLastItem = this.BindingNavigatorMoveLastItem;
+            this.bnvEstadio.MoveNextItem = this.BindingNavigatorMoveNextItem;
+            this.bnvEstadio.MovePreviousItem = this.BindingNavigatorMovePreviousItem;
+            this.bnvEstadio.Name = "bnvEstadio";
+            this.bnvEstadio.PositionItem = this.BindingNavigatorPositionItem;
+            this.bnvEstadio.Size = new System.Drawing.Size(367, 31);
+            this.bnvEstadio.TabIndex = 5;
+            this.bnvEstadio.Text = "bnvCidade";
+            this.bnvEstadio.RefreshItems += new System.EventHandler(this.bnvEstadio_RefreshItems);
             // 
             // BindingNavigatorCountItem
             // 
@@ -334,10 +335,10 @@
             // Detalhes
             // 
             this.Detalhes.Controls.Add(this.cbxEstado);
-            this.Detalhes.Controls.Add(this.txtNomeCidade);
+            this.Detalhes.Controls.Add(this.txtNomeEstadio);
             this.Detalhes.Controls.Add(this.txtId);
             this.Detalhes.Controls.Add(this.lblEstado);
-            this.Detalhes.Controls.Add(this.lblCidade);
+            this.Detalhes.Controls.Add(this.lblEstadio);
             this.Detalhes.Controls.Add(this.lblId);
             this.Detalhes.Location = new System.Drawing.Point(4, 22);
             this.Detalhes.Name = "Detalhes";
@@ -362,15 +363,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 275);
-            this.Controls.Add(this.bnvCidade);
+            this.Controls.Add(this.bnvEstadio);
             this.Controls.Add(this.TabControl1);
             this.Name = "frmCadastroEstadio";
             this.Text = "Cadastrar - Estadio";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).EndInit();
+            this.Load += new System.EventHandler(this.frmCadastroEstadio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstadio)).EndInit();
             this.Dados.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).EndInit();
-            this.bnvCidade.ResumeLayout(false);
-            this.bnvCidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvEstadio)).EndInit();
+            this.bnvEstadio.ResumeLayout(false);
+            this.bnvEstadio.PerformLayout();
             this.Detalhes.ResumeLayout(false);
             this.Detalhes.PerformLayout();
             this.TabControl1.ResumeLayout(false);
@@ -382,15 +384,15 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbxEstado;
-        internal System.Windows.Forms.DataGridView dgvCidade;
+        internal System.Windows.Forms.DataGridView dgvEstadio;
         internal System.Windows.Forms.TabPage Dados;
-        internal System.Windows.Forms.TextBox txtNomeCidade;
+        internal System.Windows.Forms.TextBox txtNomeEstadio;
         internal System.Windows.Forms.TextBox txtId;
         internal System.Windows.Forms.Label lblEstado;
-        internal System.Windows.Forms.Label lblCidade;
+        internal System.Windows.Forms.Label lblEstadio;
         internal System.Windows.Forms.Label lblId;
         internal System.Windows.Forms.ToolStripButton btnCancelar;
-        internal System.Windows.Forms.BindingNavigator bnvCidade;
+        internal System.Windows.Forms.BindingNavigator bnvEstadio;
         internal System.Windows.Forms.ToolStripLabel BindingNavigatorCountItem;
         internal System.Windows.Forms.ToolStripButton BindingNavigatorMoveFirstItem;
         internal System.Windows.Forms.ToolStripButton BindingNavigatorMovePreviousItem;
