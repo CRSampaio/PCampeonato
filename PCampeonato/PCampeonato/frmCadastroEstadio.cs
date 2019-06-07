@@ -16,5 +16,10 @@ namespace PCampeonato
         {
             InitializeComponent();
         }
+
+        private void btnNovoRegistro_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
