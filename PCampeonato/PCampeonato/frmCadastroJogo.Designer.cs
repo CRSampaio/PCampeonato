@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroJogo));
             this.TabControl1 = new System.Windows.Forms.TabControl();
             this.Dados = new System.Windows.Forms.TabPage();
-            this.dgvCidade = new System.Windows.Forms.DataGridView();
+            this.dgvJogo = new System.Windows.Forms.DataGridView();
             this.Detalhes = new System.Windows.Forms.TabPage();
             this.txtIdJogo = new System.Windows.Forms.TextBox();
             this.dtpDataJogo = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraJogo = new System.Windows.Forms.DateTimePicker();
             this.cbbEstadio = new System.Windows.Forms.ComboBox();
             this.cbbTime1 = new System.Windows.Forms.ComboBox();
             this.cbbTime2 = new System.Windows.Forms.ComboBox();
@@ -55,7 +55,7 @@
             this.btnAlterar = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnSair = new System.Windows.Forms.ToolStripButton();
-            this.bnvCidade = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnvJogo = new System.Windows.Forms.BindingNavigator(this.components);
             this.cbbGrupo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,10 +70,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.TabControl1.SuspendLayout();
             this.Dados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJogo)).BeginInit();
             this.Detalhes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).BeginInit();
-            this.bnvCidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvJogo)).BeginInit();
+            this.bnvJogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControl1
@@ -88,7 +88,7 @@
             // 
             // Dados
             // 
-            this.Dados.Controls.Add(this.dgvCidade);
+            this.Dados.Controls.Add(this.dgvJogo);
             this.Dados.Location = new System.Drawing.Point(4, 22);
             this.Dados.Name = "Dados";
             this.Dados.Padding = new System.Windows.Forms.Padding(3);
@@ -97,21 +97,21 @@
             this.Dados.Text = "Dados";
             this.Dados.UseVisualStyleBackColor = true;
             // 
-            // dgvCidade
+            // dgvJogo
             // 
-            this.dgvCidade.AllowUserToAddRows = false;
-            this.dgvCidade.AllowUserToDeleteRows = false;
-            this.dgvCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvJogo.AllowUserToAddRows = false;
+            this.dgvJogo.AllowUserToDeleteRows = false;
+            this.dgvJogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCidade.Location = new System.Drawing.Point(-4, 0);
-            this.dgvCidade.MaximumSize = new System.Drawing.Size(346, 182);
-            this.dgvCidade.MinimumSize = new System.Drawing.Size(346, 182);
-            this.dgvCidade.Name = "dgvCidade";
-            this.dgvCidade.ReadOnly = true;
-            this.dgvCidade.Size = new System.Drawing.Size(346, 182);
-            this.dgvCidade.TabIndex = 0;
+            this.dgvJogo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJogo.Location = new System.Drawing.Point(-4, 0);
+            this.dgvJogo.MaximumSize = new System.Drawing.Size(346, 182);
+            this.dgvJogo.MinimumSize = new System.Drawing.Size(346, 182);
+            this.dgvJogo.Name = "dgvJogo";
+            this.dgvJogo.ReadOnly = true;
+            this.dgvJogo.Size = new System.Drawing.Size(346, 182);
+            this.dgvJogo.TabIndex = 0;
             // 
             // Detalhes
             // 
@@ -130,7 +130,7 @@
             this.Detalhes.Controls.Add(this.cbbTime2);
             this.Detalhes.Controls.Add(this.cbbTime1);
             this.Detalhes.Controls.Add(this.cbbEstadio);
-            this.Detalhes.Controls.Add(this.dateTimePicker1);
+            this.Detalhes.Controls.Add(this.dtpHoraJogo);
             this.Detalhes.Controls.Add(this.dtpDataJogo);
             this.Detalhes.Controls.Add(this.txtIdJogo);
             this.Detalhes.Location = new System.Drawing.Point(4, 22);
@@ -156,13 +156,13 @@
             this.dtpDataJogo.Size = new System.Drawing.Size(177, 20);
             this.dtpDataJogo.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dtpHoraJogo
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(189, 70);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(177, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtpHoraJogo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraJogo.Location = new System.Drawing.Point(189, 70);
+            this.dtpHoraJogo.Name = "dtpHoraJogo";
+            this.dtpHoraJogo.Size = new System.Drawing.Size(177, 20);
+            this.dtpHoraJogo.TabIndex = 2;
             // 
             // cbbEstadio
             // 
@@ -263,6 +263,7 @@
             this.btnNovoRegistro.RightToLeftAutoMirrorImage = true;
             this.btnNovoRegistro.Size = new System.Drawing.Size(28, 28);
             this.btnNovoRegistro.Text = "Adicionar Novo Registro";
+            this.btnNovoRegistro.Click += new System.EventHandler(this.btnNovoRegistro_Click);
             // 
             // btnExcluir
             // 
@@ -311,13 +312,13 @@
             this.btnSair.Size = new System.Drawing.Size(28, 28);
             this.btnSair.Text = "Sair";
             // 
-            // bnvCidade
+            // bnvJogo
             // 
-            this.bnvCidade.AddNewItem = null;
-            this.bnvCidade.CountItem = this.BindingNavigatorCountItem;
-            this.bnvCidade.DeleteItem = null;
-            this.bnvCidade.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bnvCidade.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnvJogo.AddNewItem = null;
+            this.bnvJogo.CountItem = this.BindingNavigatorCountItem;
+            this.bnvJogo.DeleteItem = null;
+            this.bnvJogo.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bnvJogo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BindingNavigatorMoveFirstItem,
             this.BindingNavigatorMovePreviousItem,
             this.BindingNavigatorSeparator,
@@ -333,16 +334,16 @@
             this.btnAlterar,
             this.btnCancelar,
             this.btnSair});
-            this.bnvCidade.Location = new System.Drawing.Point(0, 0);
-            this.bnvCidade.MoveFirstItem = this.BindingNavigatorMoveFirstItem;
-            this.bnvCidade.MoveLastItem = this.BindingNavigatorMoveLastItem;
-            this.bnvCidade.MoveNextItem = this.BindingNavigatorMoveNextItem;
-            this.bnvCidade.MovePreviousItem = this.BindingNavigatorMovePreviousItem;
-            this.bnvCidade.Name = "bnvCidade";
-            this.bnvCidade.PositionItem = this.BindingNavigatorPositionItem;
-            this.bnvCidade.Size = new System.Drawing.Size(620, 31);
-            this.bnvCidade.TabIndex = 7;
-            this.bnvCidade.Text = "bnvCidade";
+            this.bnvJogo.Location = new System.Drawing.Point(0, 0);
+            this.bnvJogo.MoveFirstItem = this.BindingNavigatorMoveFirstItem;
+            this.bnvJogo.MoveLastItem = this.BindingNavigatorMoveLastItem;
+            this.bnvJogo.MoveNextItem = this.BindingNavigatorMoveNextItem;
+            this.bnvJogo.MovePreviousItem = this.BindingNavigatorMovePreviousItem;
+            this.bnvJogo.Name = "bnvJogo";
+            this.bnvJogo.PositionItem = this.BindingNavigatorPositionItem;
+            this.bnvJogo.Size = new System.Drawing.Size(620, 31);
+            this.bnvJogo.TabIndex = 7;
+            this.bnvJogo.Text = "bnvCidade";
             // 
             // cbbGrupo
             // 
@@ -464,18 +465,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 422);
-            this.Controls.Add(this.bnvCidade);
+            this.Controls.Add(this.bnvJogo);
             this.Controls.Add(this.TabControl1);
             this.Name = "frmCadastroJogo";
             this.Text = "frmCadastroJogo";
             this.TabControl1.ResumeLayout(false);
             this.Dados.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJogo)).EndInit();
             this.Detalhes.ResumeLayout(false);
             this.Detalhes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).EndInit();
-            this.bnvCidade.ResumeLayout(false);
-            this.bnvCidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvJogo)).EndInit();
+            this.bnvJogo.ResumeLayout(false);
+            this.bnvJogo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,12 +485,12 @@
         #endregion
         internal System.Windows.Forms.TabControl TabControl1;
         internal System.Windows.Forms.TabPage Dados;
-        internal System.Windows.Forms.DataGridView dgvCidade;
+        internal System.Windows.Forms.DataGridView dgvJogo;
         internal System.Windows.Forms.TabPage Detalhes;
         private System.Windows.Forms.ComboBox cbbTime2;
         private System.Windows.Forms.ComboBox cbbTime1;
         private System.Windows.Forms.ComboBox cbbEstadio;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpHoraJogo;
         private System.Windows.Forms.DateTimePicker dtpDataJogo;
         private System.Windows.Forms.TextBox txtIdJogo;
         private System.Windows.Forms.Label label10;
@@ -519,6 +520,6 @@
         internal System.Windows.Forms.ToolStripButton btnAlterar;
         internal System.Windows.Forms.ToolStripButton btnCancelar;
         internal System.Windows.Forms.ToolStripButton btnSair;
-        internal System.Windows.Forms.BindingNavigator bnvCidade;
+        internal System.Windows.Forms.BindingNavigator bnvJogo;
     }
 }
