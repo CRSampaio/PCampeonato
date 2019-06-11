@@ -51,6 +51,12 @@
     <Compile Include="frmCadastroEstadio.Designer.cs">
       <DependentUpon>frmCadastroEstadio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroJogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroJogo.Designer.cs">
+      <DependentUpon>frmCadastroJogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroTime.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Time.cs" />
     <EmbeddedResource Include="frmCadastroEstadio.resx">
       <DependentUpon>frmCadastroEstadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroJogo.resx">
+      <DependentUpon>frmCadastroJogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroTime.resx">
       <DependentUpon>frmCadastroTime.cs</DependentUpon>
