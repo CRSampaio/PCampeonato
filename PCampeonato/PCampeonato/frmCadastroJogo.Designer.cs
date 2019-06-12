@@ -34,12 +34,21 @@
             this.Dados = new System.Windows.Forms.TabPage();
             this.dgvJogo = new System.Windows.Forms.DataGridView();
             this.Detalhes = new System.Windows.Forms.TabPage();
-            this.txtIdJogo = new System.Windows.Forms.TextBox();
-            this.dtpDataJogo = new System.Windows.Forms.DateTimePicker();
-            this.dtpHoraJogo = new System.Windows.Forms.DateTimePicker();
-            this.cbbEstadio = new System.Windows.Forms.ComboBox();
-            this.cbbTime1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rtxtObs = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbbGrupo = new System.Windows.Forms.ComboBox();
             this.cbbTime2 = new System.Windows.Forms.ComboBox();
+            this.cbbTime1 = new System.Windows.Forms.ComboBox();
+            this.cbbEstadio = new System.Windows.Forms.ComboBox();
+            this.dtpDataJogo = new System.Windows.Forms.DateTimePicker();
+            this.txtIdJogo = new System.Windows.Forms.TextBox();
             this.BindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.BindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.BindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -56,18 +65,6 @@
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.bnvJogo = new System.Windows.Forms.BindingNavigator(this.components);
-            this.cbbGrupo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.rtxtObs = new System.Windows.Forms.RichTextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.TabControl1.SuspendLayout();
             this.Dados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJogo)).BeginInit();
@@ -121,16 +118,13 @@
             this.Detalhes.Controls.Add(this.label8);
             this.Detalhes.Controls.Add(this.label7);
             this.Detalhes.Controls.Add(this.label6);
-            this.Detalhes.Controls.Add(this.label5);
             this.Detalhes.Controls.Add(this.label4);
-            this.Detalhes.Controls.Add(this.label3);
             this.Detalhes.Controls.Add(this.label2);
             this.Detalhes.Controls.Add(this.label1);
             this.Detalhes.Controls.Add(this.cbbGrupo);
             this.Detalhes.Controls.Add(this.cbbTime2);
             this.Detalhes.Controls.Add(this.cbbTime1);
             this.Detalhes.Controls.Add(this.cbbEstadio);
-            this.Detalhes.Controls.Add(this.dtpHoraJogo);
             this.Detalhes.Controls.Add(this.dtpDataJogo);
             this.Detalhes.Controls.Add(this.txtIdJogo);
             this.Detalhes.Location = new System.Drawing.Point(4, 22);
@@ -141,52 +135,143 @@
             this.Detalhes.Text = "Detalhes";
             this.Detalhes.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(59, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Obs:";
+            // 
+            // rtxtObs
+            // 
+            this.rtxtObs.Location = new System.Drawing.Point(94, 151);
+            this.rtxtObs.Name = "rtxtObs";
+            this.rtxtObs.Size = new System.Drawing.Size(398, 121);
+            this.rtxtObs.TabIndex = 16;
+            this.rtxtObs.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(179, 127);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 13);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Grupo:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(498, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = ":Time 2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Time 1:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(270, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "X";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(138, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Estádio:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(150, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Data:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(162, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "ID:";
+            // 
+            // cbbGrupo
+            // 
+            this.cbbGrupo.FormattingEnabled = true;
+            this.cbbGrupo.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"});
+            this.cbbGrupo.Location = new System.Drawing.Point(227, 124);
+            this.cbbGrupo.Name = "cbbGrupo";
+            this.cbbGrupo.Size = new System.Drawing.Size(106, 21);
+            this.cbbGrupo.TabIndex = 6;
+            // 
+            // cbbTime2
+            // 
+            this.cbbTime2.FormattingEnabled = true;
+            this.cbbTime2.Location = new System.Drawing.Point(315, 97);
+            this.cbbTime2.Name = "cbbTime2";
+            this.cbbTime2.Size = new System.Drawing.Size(177, 21);
+            this.cbbTime2.TabIndex = 5;
+            // 
+            // cbbTime1
+            // 
+            this.cbbTime1.FormattingEnabled = true;
+            this.cbbTime1.Location = new System.Drawing.Point(75, 97);
+            this.cbbTime1.Name = "cbbTime1";
+            this.cbbTime1.Size = new System.Drawing.Size(177, 21);
+            this.cbbTime1.TabIndex = 4;
+            // 
+            // cbbEstadio
+            // 
+            this.cbbEstadio.FormattingEnabled = true;
+            this.cbbEstadio.Location = new System.Drawing.Point(189, 70);
+            this.cbbEstadio.Name = "cbbEstadio";
+            this.cbbEstadio.Size = new System.Drawing.Size(177, 21);
+            this.cbbEstadio.TabIndex = 3;
+            // 
+            // dtpDataJogo
+            // 
+            this.dtpDataJogo.CustomFormat = "dd/MM/yyyy hh:mm";
+            this.dtpDataJogo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataJogo.Location = new System.Drawing.Point(189, 44);
+            this.dtpDataJogo.Name = "dtpDataJogo";
+            this.dtpDataJogo.Size = new System.Drawing.Size(177, 20);
+            this.dtpDataJogo.TabIndex = 1;
+            // 
             // txtIdJogo
             // 
             this.txtIdJogo.Location = new System.Drawing.Point(189, 18);
             this.txtIdJogo.Name = "txtIdJogo";
             this.txtIdJogo.Size = new System.Drawing.Size(177, 20);
             this.txtIdJogo.TabIndex = 0;
-            // 
-            // dtpDataJogo
-            // 
-            this.dtpDataJogo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataJogo.Location = new System.Drawing.Point(189, 44);
-            this.dtpDataJogo.Name = "dtpDataJogo";
-            this.dtpDataJogo.Size = new System.Drawing.Size(177, 20);
-            this.dtpDataJogo.TabIndex = 1;
-            // 
-            // dtpHoraJogo
-            // 
-            this.dtpHoraJogo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHoraJogo.Location = new System.Drawing.Point(189, 70);
-            this.dtpHoraJogo.Name = "dtpHoraJogo";
-            this.dtpHoraJogo.Size = new System.Drawing.Size(177, 20);
-            this.dtpHoraJogo.TabIndex = 2;
-            // 
-            // cbbEstadio
-            // 
-            this.cbbEstadio.FormattingEnabled = true;
-            this.cbbEstadio.Location = new System.Drawing.Point(189, 97);
-            this.cbbEstadio.Name = "cbbEstadio";
-            this.cbbEstadio.Size = new System.Drawing.Size(177, 21);
-            this.cbbEstadio.TabIndex = 3;
-            // 
-            // cbbTime1
-            // 
-            this.cbbTime1.FormattingEnabled = true;
-            this.cbbTime1.Location = new System.Drawing.Point(75, 124);
-            this.cbbTime1.Name = "cbbTime1";
-            this.cbbTime1.Size = new System.Drawing.Size(177, 21);
-            this.cbbTime1.TabIndex = 4;
-            // 
-            // cbbTime2
-            // 
-            this.cbbTime2.FormattingEnabled = true;
-            this.cbbTime2.Location = new System.Drawing.Point(315, 124);
-            this.cbbTime2.Name = "cbbTime2";
-            this.cbbTime2.Size = new System.Drawing.Size(177, 21);
-            this.cbbTime2.TabIndex = 5;
             // 
             // BindingNavigatorMoveFirstItem
             // 
@@ -345,121 +430,6 @@
             this.bnvJogo.TabIndex = 7;
             this.bnvJogo.Text = "bnvCidade";
             // 
-            // cbbGrupo
-            // 
-            this.cbbGrupo.FormattingEnabled = true;
-            this.cbbGrupo.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H"});
-            this.cbbGrupo.Location = new System.Drawing.Point(227, 151);
-            this.cbbGrupo.Name = "cbbGrupo";
-            this.cbbGrupo.Size = new System.Drawing.Size(106, 21);
-            this.cbbGrupo.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "ID:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Data:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(150, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Hora:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(138, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Estádio:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(270, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "X";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 127);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Time 1:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(498, 127);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = ":Time 2";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(179, 154);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Grupo:";
-            // 
-            // rtxtObs
-            // 
-            this.rtxtObs.Location = new System.Drawing.Point(94, 178);
-            this.rtxtObs.Name = "rtxtObs";
-            this.rtxtObs.Size = new System.Drawing.Size(398, 121);
-            this.rtxtObs.TabIndex = 16;
-            this.rtxtObs.Text = "";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(59, 181);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Obs:";
-            // 
             // frmCadastroJogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,7 +460,6 @@
         private System.Windows.Forms.ComboBox cbbTime2;
         private System.Windows.Forms.ComboBox cbbTime1;
         private System.Windows.Forms.ComboBox cbbEstadio;
-        private System.Windows.Forms.DateTimePicker dtpHoraJogo;
         private System.Windows.Forms.DateTimePicker dtpDataJogo;
         private System.Windows.Forms.TextBox txtIdJogo;
         private System.Windows.Forms.Label label10;
@@ -499,9 +468,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbGrupo;

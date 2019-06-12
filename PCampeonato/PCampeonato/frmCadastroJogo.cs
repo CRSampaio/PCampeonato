@@ -33,12 +33,11 @@ namespace PCampeonato
                 bnvJogo.BindingSource = bnJogo;
 
                 txtIdJogo.DataBindings.Add("TEXT", bnJogo, "id_jogo");
-                dtpDataJogo.DataBindings.Add("VALUE", bnJogo, "dthr_jogo");
-                dtpHoraJogo.DataBindings.Add("VALUE", bnJogo, "dthr_jogo");
-                cbbEstadio.DataBindings.Add("SelectedItem", bnJogo, "estadio_id_estadio");
-                cbbTime1.DataBindings.Add("SelectedItem", bnJogo, "time_id_time1");
-                cbbTime2.DataBindings.Add("SelctedItem", bnJogo, "time_id_time2");
-                cbbGrupo.DataBindings.Add("SelectedItem", bnJogo, "grupo_jogo");
+                dtpDataJogo.DataBindings.Add("TEXT", bnJogo, "dthr_jogo");
+                cbbEstadio.DataBindings.Add("SelectedValue", bnJogo, "estadio_id_estadio");
+                cbbTime1.DataBindings.Add("SelectedValue", bnJogo, "time_id_time1");
+                cbbTime2.DataBindings.Add("SelctedValue", bnJogo, "time_id_time2");
+                cbbGrupo.DataBindings.Add("SelectedValue", bnJogo, "grupo_jogo");
                 rtxtObs.DataBindings.Add("TEXT", bnJogo, "obs_jogo");
             }
             catch (Exception ex)
