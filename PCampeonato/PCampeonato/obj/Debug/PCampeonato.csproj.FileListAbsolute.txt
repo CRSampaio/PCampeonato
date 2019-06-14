@@ -20,6 +20,7 @@ Q:\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.P
 Q:\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csproj.GenerateResource.Cache
 Q:\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.exe
 Q:\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.pdb
+<<<<<<< HEAD
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csprojAssemblyReference.cache
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroEstadio.resources
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroJogo.resources
@@ -33,3 +34,14 @@ C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\bin\Debug\PCampeonato.exe.config
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\bin\Debug\PCampeonato.exe
 C:\Users\jhowv\OneDrive\Área de Trabalho\Fatec\LP2\trabalhos\ProjetoCampeonato\PCampeonato\PCampeonato\PCampeonato\bin\Debug\PCampeonato.pdb
+=======
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroEstadio.resources
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmCadastroTime.resources
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.frmMenuPrincipal.resources
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.exe
+C:\Users\Usuario\Desktop\Pcampeonato\PCampeonato\PCampeonato\PCampeonato\obj\Debug\PCampeonato.pdb
+>>>>>>> 4f3566ea20728e87bc713e6c689affc1d25b7f3e

@@ -187,7 +187,6 @@
             // 
             this.bnvEstadio.AddNewItem = null;
             this.bnvEstadio.CountItem = this.BindingNavigatorCountItem;
-            this.bnvEstadio.CountItemFormat = "de {0}";
             this.bnvEstadio.DeleteItem = null;
             this.bnvEstadio.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bnvEstadio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -303,6 +302,7 @@
             this.btnExcluir.RightToLeftAutoMirrorImage = true;
             this.btnExcluir.Size = new System.Drawing.Size(28, 28);
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
