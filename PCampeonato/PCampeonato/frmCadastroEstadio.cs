@@ -50,6 +50,10 @@ namespace PCampeonato
                 cbxEstado.DataBindings.Add("SelectedItem", bnEstadio, "uf_Estadio");
 
             }
+            catch(Exception erro)
+            {
+                Console.WriteLine(erro);
+            }
         }
 
         private void bnvEstadio_RefreshItems(object sender, EventArgs e)

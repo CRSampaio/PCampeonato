@@ -47,7 +47,7 @@
             this.cbbTime2 = new System.Windows.Forms.ComboBox();
             this.cbbTime1 = new System.Windows.Forms.ComboBox();
             this.cbbEstadio = new System.Windows.Forms.ComboBox();
-            this.dtpDataJogo = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataHora = new System.Windows.Forms.DateTimePicker();
             this.txtIdJogo = new System.Windows.Forms.TextBox();
             this.BindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.BindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -125,7 +125,7 @@
             this.Detalhes.Controls.Add(this.cbbTime2);
             this.Detalhes.Controls.Add(this.cbbTime1);
             this.Detalhes.Controls.Add(this.cbbEstadio);
-            this.Detalhes.Controls.Add(this.dtpDataJogo);
+            this.Detalhes.Controls.Add(this.dtpDataHora);
             this.Detalhes.Controls.Add(this.txtIdJogo);
             this.Detalhes.Location = new System.Drawing.Point(4, 22);
             this.Detalhes.Name = "Detalhes";
@@ -146,6 +146,7 @@
             // 
             // rtxtObs
             // 
+            this.rtxtObs.Enabled = false;
             this.rtxtObs.Location = new System.Drawing.Point(94, 151);
             this.rtxtObs.Name = "rtxtObs";
             this.rtxtObs.Size = new System.Drawing.Size(398, 121);
@@ -218,6 +219,7 @@
             // 
             // cbbGrupo
             // 
+            this.cbbGrupo.Enabled = false;
             this.cbbGrupo.FormattingEnabled = true;
             this.cbbGrupo.Items.AddRange(new object[] {
             "A",
@@ -235,6 +237,7 @@
             // 
             // cbbTime2
             // 
+            this.cbbTime2.Enabled = false;
             this.cbbTime2.FormattingEnabled = true;
             this.cbbTime2.Location = new System.Drawing.Point(315, 97);
             this.cbbTime2.Name = "cbbTime2";
@@ -243,6 +246,7 @@
             // 
             // cbbTime1
             // 
+            this.cbbTime1.Enabled = false;
             this.cbbTime1.FormattingEnabled = true;
             this.cbbTime1.Location = new System.Drawing.Point(75, 97);
             this.cbbTime1.Name = "cbbTime1";
@@ -251,25 +255,29 @@
             // 
             // cbbEstadio
             // 
+            this.cbbEstadio.Enabled = false;
             this.cbbEstadio.FormattingEnabled = true;
             this.cbbEstadio.Location = new System.Drawing.Point(189, 70);
             this.cbbEstadio.Name = "cbbEstadio";
             this.cbbEstadio.Size = new System.Drawing.Size(177, 21);
             this.cbbEstadio.TabIndex = 3;
             // 
-            // dtpDataJogo
+            // dtpDataHora
             // 
-            this.dtpDataJogo.CustomFormat = "dd/MM/yyyy hh:mm";
-            this.dtpDataJogo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataJogo.Location = new System.Drawing.Point(189, 44);
-            this.dtpDataJogo.Name = "dtpDataJogo";
-            this.dtpDataJogo.Size = new System.Drawing.Size(177, 20);
-            this.dtpDataJogo.TabIndex = 1;
+            this.dtpDataHora.CustomFormat = "dd/MM/yyyy hh:mm";
+            this.dtpDataHora.Enabled = false;
+            this.dtpDataHora.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataHora.Location = new System.Drawing.Point(189, 44);
+            this.dtpDataHora.Name = "dtpDataHora";
+            this.dtpDataHora.Size = new System.Drawing.Size(177, 20);
+            this.dtpDataHora.TabIndex = 1;
             // 
             // txtIdJogo
             // 
+            this.txtIdJogo.Enabled = false;
             this.txtIdJogo.Location = new System.Drawing.Point(189, 18);
             this.txtIdJogo.Name = "txtIdJogo";
+            this.txtIdJogo.ReadOnly = true;
             this.txtIdJogo.Size = new System.Drawing.Size(177, 20);
             this.txtIdJogo.TabIndex = 0;
             // 
@@ -358,6 +366,7 @@
             this.btnExcluir.RightToLeftAutoMirrorImage = true;
             this.btnExcluir.Size = new System.Drawing.Size(28, 28);
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -368,6 +377,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(28, 28);
             this.btnSalvar.Text = "Salvar Registros";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnAlterar
             // 
@@ -460,7 +470,7 @@
         private System.Windows.Forms.ComboBox cbbTime2;
         private System.Windows.Forms.ComboBox cbbTime1;
         private System.Windows.Forms.ComboBox cbbEstadio;
-        private System.Windows.Forms.DateTimePicker dtpDataJogo;
+        private System.Windows.Forms.DateTimePicker dtpDataHora;
         private System.Windows.Forms.TextBox txtIdJogo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox rtxtObs;
